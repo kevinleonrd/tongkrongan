@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Keluarga Besar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #000000, #4a40db, #3794e0, #ffffff);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      text-align: center;
+    }
+
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    header {
+      padding: 20px;
+      background: linear-gradient(90deg, #1a1919, #3a3a3a, #1a1919);
+      color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1em;
+      margin-left: 20px;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #444;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .photo {
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+      background: #ffffffd9;
+      transition: transform 0.3s ease, background-color 0.4s ease;
+    }
+
+    .photo:hover {
+      transform: scale(1.05);
+      background-color: #ffeaa7;
+    }
+
+    .photo img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .caption {
+      padding: 12px;
+      text-align: center;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .info {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      max-width: 900px;
+      margin: 40px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      color: #000;
+    }
+
+    .info h2 {
+      text-align: center;
+      color: #444;
+    }
+
+    .info p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      color: #555;
+      text-align: justify;
+    }
+
+    .info-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 500px;
+      margin: 40px auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .info-box h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact-button {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 25px;
+      background-color: #25d366;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .contact-button:hover {
+      background-color: #1ebe5d;
+    }
+
+    .group-link {
+      background-color: #128C7E;
+    }
+
+    @media (max-width: 600px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      .gallery {
+        padding: 20px;
+      }
+
+      .info {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <h1>Tongkrongan Umimrietni</h1>
+      <nav>
+        <a href="#galeri">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="gallery" id="galeri">
+    <div class="photo">
+      <img src="ayip2.jpg" alt="Foto 1">
+      <div class="caption">Iab</div>
+    </div>
+
+    <div class="photo">
+      <img src="boim.jpg" alt="Foto 2">
+      <div class="caption">Asir</div>
+    </div>
+
+    <div class="photo">
+      <img src="kevin.jpg" alt="Foto 3">
+      <div class="caption">Kepin Rama</div>
+    </div>
+
+    <div class="photo">
+      <img src="abi.jpg" alt="Foto 4">
+      <div class="caption">Abi</div>
+    </div>
+  </div>
+
+  <div class="info">
+    <h2>Tentang Tongkrongan Kami</h2>
+    <p>
+      Tongkrongan umimritkomni adalah sebuah komunitas hangat yang terdiri dari sahabat-sahabat sejati yang telah melalui berbagai momen bersama. 
+      Dari tawa lepas hingga obrolan serius, kami percaya bahwa kebersamaan adalah kekuatan terbesar. 
+      Album ini adalah kenangan visual kami yang terus berkembang, menjadi saksi perjalanan pertemanan yang tulus.
+    </p>
+    <p>
+      Kami berasal dari berbagai latar belakang, namun memiliki satu tujuan: menciptakan kenangan indah dalam kebersamaan.
+      Semoga album ini dapat menjadi inspirasi bagi siapa pun yang melihatnya untuk selalu menjaga tali persaudaraan.
+    </p>
+  </div>
+
+  <div class="info-box">
+    <h2>Hubungi Admin</h2>
+    <p>Jika lu butuh bantuan atau ingin bertanya, lu bisa langsung hubungi admin:</p>
+    <a class="contact-button" href="https://wa.me/6289653302211" target="_blank">Chat Admin via WA</a><br>
+    <a class="contact-button group-link" href="https://chat.whatsapp.com/BsStUh0w79nLhwhKOEoduw" target="_blank">Gabung Komunitas</a>
+  </div>
+
+</body>
+</html>
